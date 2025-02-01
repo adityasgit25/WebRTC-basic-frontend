@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 32px;
+  color: #444;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+.video-container {
+  width: 100%;
+  height: calc(100vh - 200px); /* Adjust height to account for header and buttons */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+video {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background: #000;
+  object-fit: cover; /* Ensure video fills the container */
+}
+
+#localVideo {
+  transform: scaleX(-1); /* Mirror local video */
+}
+
+#remoteVideo {
+  border: 3px solid #007bff;
+}
